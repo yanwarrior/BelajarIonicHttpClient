@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="secondary">
+      <ion-button [routerLink]="['/mahasiswa-create']">
+        <ion-icon name="add-circle-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons *ngIf="mahasiswa" slot="primary" >
+      <ion-button [routerLink]="['/mahasiswa-edit', mahasiswa.id]">
+        <ion-icon slot="icon-only" name="create"></ion-icon>
+      </ion-button>
+      <ion-button color="danger" (click)="delete(mahasiswa)">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title *ngIf="mahasiswa">{{ mahasiswa.nama }}</ion-title>
+    <ion-title *ngIf="!mahasiswa">Mahasiswa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-item *ngFor="let mahasiswa of mahasiswas" lines="full" (click)="getMahasiswa(mahasiswa)">
+    <ion-label>
+      <h2>{{ mahasiswa.nama }}</h2>
+      <h5>{{ mahasiswa.umur }} Tahun</h5>
+      <small>{{ mahasiswa.alamat }}</small>
+    </ion-label>
+  </ion-item>
+</ion-content>

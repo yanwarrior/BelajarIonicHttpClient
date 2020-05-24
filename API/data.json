@@ -1,0 +1,34 @@
+{
+  "mahasiswa": [
+	  {
+	    "id": 1,
+	    "nama": "Sinta Nurmala",
+	    "umur": "21",
+	    "alamat": "Jl. Kartika No. 80"
+	  },
+	  {
+	    "id": 2,
+	    "nama": "Budi Kusuma",
+	    "umur": "15",
+	    "alamat": "Jl. Setia Budi Blok A No. 45"
+	  },
+	  {
+	    "id": 3,
+	    "nama": "Meka Sintia Fatihan",
+	    "umur": "14",
+	    "alamat": "Jl. Maraton Raya No. 42"
+	  },
+	  {
+	    "id": 4,
+	    "nama": "Nindya Agustin",
+	    "umur": "17",
+	    "alamat": "Jl. Bagus Timur No. 32"
+	  },
+	  {
+	    "id": 5,
+	    "nama": "Junaidi Rahman",
+	    "umur": "16",
+	    "alamat": "Jl. Timtim No. 42"
+	  }
+  ]
+}
